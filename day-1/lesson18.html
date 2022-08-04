@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* we can use: [ odd/even/n/2n/2n+2/3n+1 ] inside nth child ...they are pseudo class
+        .demo p:nth-child(odd){
+            background-color: black;
+            color: aquamarine;
+        } */
+        /* .demo p:first-of-type{
+            background-color: black;
+            color: aquamarine;
+        } */
+
+        /* //pseudo element */
+        /* p::first-letter{
+            color: chartreuse;
+            font-size: 2rem;
+
+        } */
+        /* ::selection{
+            color: chartreuse;
+            background-color: black;
+        } */
+        .demo::before, .demo::after{
+            content:'';
+            width: 100%;
+            height: 30px;
+            background-color: black;
+            display: inline-block;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="demo">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex veniam sed voluptatibus id excepturi at, autem aperiam consectetur maiores sunt.</p>
+        <p>Dignissimos ducimus dolore necessitatibus quia assumenda eos qui? Non tenetur quis repudiandae? Animi eveniet quam laborum omnis labore accusamus commodi.</p>
+        <p>Unde repudiandae minus dolores quibusdam quia facilis enim excepturi deleniti sit ea aut, ut possimus fugit tenetur. Reiciendis, eligendi? Accusantium!</p>
+        <p>Id deserunt reiciendis quod incidunt aliquid, fuga laborum numquam dolorum odio cumque repellendus omnis adipisci ducimus, maiores molestiae obcaecati blanditiis!</p>
+    </div>
+</body>
+</html>
