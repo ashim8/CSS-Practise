@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selector and Combinator</title>
+    <style>
+        /* #head{
+            background-color: rgb(90, 71, 24);
+        }
+        .para1{
+            background-color: cornflowerblue;
+        }
+
+        /* grouping selector
+        div p{
+            background-color: chartreuse;
+        } */
+
+        /* *{
+            background-color: aquamarine;
+            color: darkgreen;
+        } */
+
+        /* child selector:div er vitore jei p child ase tader upor apply hobe, ekhane 1st 2ta p */
+        div > p{
+            background-color: blanchedalmond;
+        }
+        /* adjacent sibling selector: div er porer p tag tar upor apply hobe
+        div+p{
+            background-color: aqua;
+        } */
+        /* general sibling selector: div er poroborti p tag gular upor apply hobe
+        div ~ p{
+            color: chocolate;
+        } */
+    </style>
+</head>
+<body>
+<h1 id="head">This is Heading...</h1>
+<div>
+    <p class="para1 center">this is para-1</p>
+    <p>this is para-2</p>
+    <section><p>this is para-3</p></section>
+</div>
+<p>this is para-4</p>
+<p>this is para-5</p>
+    
+</body>
+</html>
