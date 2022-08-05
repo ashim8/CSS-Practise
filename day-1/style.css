@@ -1,7 +1,6 @@
 /* span{
     color: chartreuse;
 } */
-
 .part1{
     width: 600px;
     margin: auto;
@@ -12,4 +11,40 @@
     max-width: 600px;
     margin: auto;
     border: 5px solid olivedrab;
+}
+
+/* //lesson:19
+/* a=0, b=0, c=1 == 001 */
+/* h1{
+    background-color: chartreuse;
+} */
+
+/* a=0, b=0, c=1 == 001  || h1 2tar specificity value same howar poreo 
+nicher h1 ta apply hobe as code upor teke nicher dike execute hobe  */
+
+/* h1{
+    background-color: brown;
+} */
+/* a=0, b=0, c=1 == 010  */
+/* .tittle{
+    background-color: cornflowerblue;
+} */
+/* a=1, b=0, c=0 == 100  */
+/* #heading{
+    background-color: deeppink;
+} */
+/* a=0, b=1, c=1 == 011  */
+/* h1.tittle{
+    background-color: green;
+} */
+/* a=1, b=0, c=1 == 011  */
+/* h1#heading{
+    background-color: orangered;
+}  */
+
+body{
+    background-image: url("images.jpg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-attachment: fixed;
 }
