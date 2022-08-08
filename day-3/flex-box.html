@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-box</title>
+    <style>
+        .flex-container{
+            background-color: burlywood;
+            display: flex;
+            /* // wrap use korle row er modde content gula na atle niche cole asbe */
+            flex-wrap: wrap;
+            /* // direction:column use korle content gula column borabor cole asbe */
+            /* // direction: column-reverse use korle content gula column borabor reverse dekhabe */
+            /* flex-direction: column; */
+            /* // justify-content:flex-start, flex-end, center, space-around, space-between, space evenly  */
+            justify-content: center;
+            height: 250px;
+            /* // align-item:flex-start, flex-end, center || jototuku height/width nisi tar sapekke change hobe, */
+            align-items: center;
+            
+        }
+        .flex-container > div{
+            /* width: 100px; */
+            background-color: darkgray;
+            font-size: 35px; 
+            margin: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="div1" style="order: 3;">div1</div>
+        <div class="div2" style="order: 2;">div2</div>
+        <div class="div3" style="order: 1;">div3</div>
+        <div class="div4" style="order: 5;">div4</div>
+        <div class="div5" style="order: 8;">div5</div>
+        <div class="div6" style="order: 6;">div6</div>
+        <div class="div7" style="order: 4;">div7</div>
+        <div class="div8" style="order: 7;">div8</div>
+
+    </div>
+</body>
+</html>
